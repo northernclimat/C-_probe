@@ -7,9 +7,7 @@ int[] GetArray(int num)
     return newArray;
 }
 
-Console.WriteLine(string.Join(" ", GetArray(10)));
-
-int SumOfOddNumbers(int[] arr)
+int QuantityOfEvenNumbers(int[] arr)
 {   
     int sum = 0;
     foreach (int el in arr)
@@ -25,4 +23,4 @@ int SumOfOddNumbers(int[] arr)
 Console.WriteLine("Please, input the lenght of your array:");
 int lenght = int.Parse(Console.ReadLine());
 int [] arr = GetArray(lenght);
-Console.WriteLine($"Массив: {string.Join(" ", arr)}, кол-во четных элементов: {SumOfOddNumbers(arr)}");
+Console.WriteLine($"Массив: {string.Join(" ", arr)}, кол-во четных элементов: {QuantityOfEvenNumbers(arr)}");
