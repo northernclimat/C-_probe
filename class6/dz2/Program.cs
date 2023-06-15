@@ -15,7 +15,7 @@ void GetaPointOfCrossing()
     double[] nums = Console.ReadLine().Split(' ').Select(double.Parse).ToArray();
     if (IfLinesAreParralelles(nums[0], nums[2]))
     {
-        Console.WriteLine("Pointed Lines are parralleled");
+        Console.WriteLine("Pointed Lines are parralleled or same");
     }
     else
     {
