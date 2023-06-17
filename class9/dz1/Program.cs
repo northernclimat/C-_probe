@@ -11,11 +11,8 @@ int InputaMeasure(string text)
 
 string ShowNumbers(int n)
 {
-    if (n == 1)
-    {
-        return "1";
-    }
-    return n + " " + ShowNumbers(n - 1);
+
+    return n == 1? "1" : n + " " + ShowNumbers(n - 1);
 }
 
 int n = InputaMeasure("Please, input upper range: ");
